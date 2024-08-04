@@ -1,6 +1,7 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 import { Metadata } from 'next';
+import { DocumentChartBarIcon } from '@heroicons/react/24/outline';
 
 export const metadata: Metadata = {
   title: {

@@ -1,8 +1,8 @@
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import styles from '@/app/ui/home.module.css';
 import Image from 'next/image';
+// import styles from '@/app/ui/home.module.css';
 
 export default function Page() {
   return (
@@ -24,7 +24,7 @@ export default function Page() {
             <span>Inicia Sesión</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
         </div>
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
+        <div className="flex items-center justify-center md:w-3/5 md:px-38 md:py-12">
 
           <Image
             src="/hero-desktop.png"
