@@ -28,8 +28,8 @@ export default function Search() {
         Search
       </label>
       <input
-        className="peer block w-full rounded-md border border-gray-200 py-[9px] pl-10 text-sm outline-2 placeholder:text-gray-500"
-        placeholder={"Search invoices..."}
+        className="peer block w-full rounded-md borde-3 border-gray-200 py-[9px] pl-10 text-sm placeholder:text-gray-500 focus:ring-emerald-50 focus:border-emerald-500"
+        placeholder={"Buscar registro..."}
         onChange={(e) => {
           handleSearch(e.target.value);
         }}

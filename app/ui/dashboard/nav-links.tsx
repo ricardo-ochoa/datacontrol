@@ -1,7 +1,7 @@
 'use client';
 
 import {
-  UserGroupIcon,
+  // UserGroupIcon,
   ChartBarIcon,
   PencilSquareIcon,
 } from '@heroicons/react/24/outline';
@@ -17,7 +17,11 @@ const links = [
     href: '/dashboard/registros',
     icon: PencilSquareIcon,
   },
-  { name: 'Dashboard', href: '/dashboard', icon: ChartBarIcon },
+  {
+    name: 'Dashboard',
+    href: '/dashboard',
+    icon: ChartBarIcon
+  },
   // { name: 'Customers', href: '/dashboard/customers', icon: UserGroupIcon },
 ];
 
@@ -32,7 +36,10 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'flex h-[48px] grow items-center text-gray-500 justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-emerald-50 hover:text-emerald-600 md:flex-none md:justify-start md:p-2 md:px-3',
+              'flex h-[48px] grow items-center rounded text-gray-500 justify-center gap-2 p-3 text-sm font-medium hover:bg-emerald-50 hover:text-emerald-600 md:flex-none md:justify-start md:p-2 md:px-3',
+              {
+                'bg-slate-50': pathname !== link.href,
+              },
               {
                 'bg-emerald-100 text-green-900': pathname === link.href,
               },

@@ -3,7 +3,7 @@ export const experimental_ppr = true;
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Invoices',
+    title: 'Registros',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
